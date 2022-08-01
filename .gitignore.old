@@ -2,6 +2,7 @@
 *
 
 # Except...
+!*.md
 !*.html
 !*.css
 !*.txt
