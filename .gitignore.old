@@ -1,0 +1,12 @@
+# Ignore everything
+*
+
+# Except...
+!*.html
+!*.css
+!*.txt
+!*.ico
+!feed.xml
+
+# ...even if they are in subdirectories
+!*/
