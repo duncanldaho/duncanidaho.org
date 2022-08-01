@@ -1,0 +1,30 @@
+html{
+	background:#251d1d;
+	color:#eee;
+}
+.date,.author,.h a{display:none}
+code,pre,#TOC,a:hover{background:#444}
+:not(p),a:hover {
+	max-width:50em;
+	margin:0 auto;
+	font-family:sans-serif;
+	line-height:1.4
+}
+a{color:#fcc}
+.title>*, header ul>li, .nav ul>li,
+#footer ul>li, .h:hover>*
+ul>li
+{
+	display:inline;
+	margin:.7%;
+	text-align:center;
+}
+.title>*,span.date{display:block}
+img,video{max-width:100%}
+#TOC{
+	float:left;
+	margin:1em
+}
+html,ul,#TOC{padding:1em}
+.header{text-align: center}
+.footer{text-align: center}
