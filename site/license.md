@@ -1,32 +1,10 @@
 ---
-title: License
-x-toc-enable: true
+title: GNUv3 License
+x-toc-enabled: true
 ...
 
-Unless otherwise stated, every page and image (e.g. JPG/PNG files) on
-libreboot.org or in the repository that it is built on, is released under the
-terms of the GNU Free Documentation License, either version 1.3 or (at your
-option) any newer version as published by the [Free Software
-Foundation](https://www.fsf.org/), with no Invariant Sections, no Front Cover
-Texts and no Back Cover
-Texts.
-
-These pages are static HTML, generated from Markdown files, which you can find
-a link to at the bottom of each HTML page, for the corresponding Markdown file.
-
-The terms of this license are written below, unmodified, except to change the
-formatting so that the text would integrate nicely on this website.
-
-You can also find the license here:
-<https://www.gnu.org/licenses/fdl-1.3.en.html>
-
-The markdown version, hosted by the GNU project, can be found here:
-<https://www.gnu.org/licenses/fdl-1.3.md>
-
-The *unmodified* license text is as follows:
-
 GNU Free Documentation License
-==============================
+=========================================
 
 Version 1.3, 3 November 2008
 
@@ -36,8 +14,7 @@ Inc. <https://fsf.org/>
 Everyone is permitted to copy and distribute verbatim copies of this
 license document, but changing it is not allowed.
 
-0. PREAMBLE
------------
+#### 0. PREAMBLE
 
 The purpose of this License is to make a manual, textbook, or other
 functional and useful document "free" in the sense of freedom: to
@@ -60,8 +37,7 @@ can be used for any textual work, regardless of subject matter or
 whether it is published as a printed book. We recommend this License
 principally for works whose purpose is instruction or reference.
 
-1. APPLICABILITY AND DEFINITIONS
---------------------------------
+#### 1. APPLICABILITY AND DEFINITIONS
 
 This License applies to any manual or other work, in any medium, that
 contains a notice placed by the copyright holder saying it can be
@@ -150,8 +126,7 @@ License, but only as regards disclaiming warranties: any other
 implication that these Warranty Disclaimers may have is void and has
 no effect on the meaning of this License.
 
-2. VERBATIM COPYING
--------------------
+#### 2. VERBATIM COPYING
 
 You may copy and distribute the Document in any medium, either
 commercially or noncommercially, provided that this License, the
@@ -166,8 +141,7 @@ number of copies you must also follow the conditions in section 3.
 You may also lend copies, under the same conditions stated above, and
 you may publicly display copies.
 
-3. COPYING IN QUANTITY
-----------------------
+#### 3. COPYING IN QUANTITY
 
 If you publish printed copies (or copies in media that commonly have
 printed covers) of the Document, numbering more than 100, and the
@@ -205,8 +179,7 @@ Document well before redistributing any large number of copies, to
 give them a chance to provide you with an updated version of the
 Document.
 
-4. MODIFICATIONS
-----------------
+#### 4. MODIFICATIONS
 
 You may copy and distribute a Modified Version of the Document under
 the conditions of sections 2 and 3 above, provided that you release
@@ -295,8 +268,7 @@ The author(s) and publisher(s) of the Document do not by this License
 give permission to use their names for publicity for or to assert or
 imply endorsement of any Modified Version.
 
-5. COMBINING DOCUMENTS
-----------------------
+#### 5. COMBINING DOCUMENTS
 
 You may combine the Document with other documents released under this
 License, under the terms defined in section 4 above for modified
@@ -320,8 +292,7 @@ in the various original documents, forming one section Entitled
 and any sections Entitled "Dedications". You must delete all sections
 Entitled "Endorsements".
 
-6. COLLECTIONS OF DOCUMENTS
----------------------------
+#### 6. COLLECTIONS OF DOCUMENTS
 
 You may make a collection consisting of the Document and other
 documents released under this License, and replace the individual
@@ -336,8 +307,7 @@ copy of this License into the extracted document, and follow this
 License in all other respects regarding verbatim copying of that
 document.
 
-7. AGGREGATION WITH INDEPENDENT WORKS
--------------------------------------
+#### 7. AGGREGATION WITH INDEPENDENT WORKS
 
 A compilation of the Document or its derivatives with other separate
 and independent documents or works, in or on a volume of a storage or
@@ -356,8 +326,7 @@ electronic equivalent of covers if the Document is in electronic form.
 Otherwise they must appear on printed covers that bracket the whole
 aggregate.
 
-8. TRANSLATION
---------------
+#### 8. TRANSLATION
 
 Translation is considered a kind of modification, so you may
 distribute translations of the Document under the terms of section 4.
@@ -377,8 +346,7 @@ If a section in the Document is Entitled "Acknowledgements",
 its Title (section 1) will typically require changing the actual
 title.
 
-9. TERMINATION
---------------
+#### 9. TERMINATION
 
 You may not copy, modify, sublicense, or distribute the Document
 except as expressly provided under this License. Any attempt otherwise
@@ -405,8 +373,7 @@ this License. If your rights have been terminated and not permanently
 reinstated, receipt of a copy of some or all of the same material does
 not give you any rights to use it.
 
-10. FUTURE REVISIONS OF THIS LICENSE
-------------------------------------
+#### 10. FUTURE REVISIONS OF THIS LICENSE
 
 The Free Software Foundation may publish new, revised versions of the
 GNU Free Documentation License from time to time. Such new versions
@@ -426,8 +393,7 @@ that a proxy can decide which future versions of this License can be
 used, that proxy's public statement of acceptance of a version
 permanently authorizes you to choose that version for the Document.
 
-11. RELICENSING
----------------
+#### 11. RELICENSING
 
 "Massive Multiauthor Collaboration Site" (or "MMC Site") means any
 World Wide Web server that publishes copyrightable works and also
@@ -454,39 +420,3 @@ and (2) were thus incorporated prior to November 1, 2008.
 The operator of an MMC Site may republish an MMC contained in the site
 under CC-BY-SA on the same site at any time before August 1, 2009,
 provided the MMC is eligible for relicensing.
-
-ADDENDUM: How to use this License for your documents
-====================================================
-
-To use this License in a document you have written, include a copy of
-the License in the document and put the following copyright and
-license notices just after the title page:
-
-        Copyright (C)  YEAR  YOUR NAME.
-        Permission is granted to copy, distribute and/or modify this document
-        under the terms of the GNU Free Documentation License, Version 1.3
-        or any later version published by the Free Software Foundation;
-        with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
-        A copy of the license is included in the section entitled "GNU
-        Free Documentation License".
-
-If you have Invariant Sections, Front-Cover Texts and Back-Cover
-Texts, replace the "with … Texts." line with this:
-
-        with the Invariant Sections being LIST THEIR TITLES, with the
-        Front-Cover Texts being LIST, and with the Back-Cover Texts being LIST.
-
-If you have Invariant Sections without Cover Texts, or some other
-combination of the three, merge those two alternatives to suit the
-situation.
-
-If your document contains nontrivial examples of program code, we
-recommend releasing these examples in parallel under your choice of
-free software license, such as the GNU General Public License, to
-permit their use in free software.
-
--------------------------------------------------------------------------------
-
-The license text ended in the previous paragraph. Now you see the generic footer
-generated for every page on this website:
-
