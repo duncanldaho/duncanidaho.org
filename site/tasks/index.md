@@ -3,10 +3,12 @@ title: tasks
 x-toc-enable: false
 ...
 
+[test task](/testing.md)
+
 NST gallery
 
-manage git (get rid of old website)
+clean up news folder, rename it?, test site.cfg blog dir
 
-php needed anymore?
+~~manage git (get rid of old website)~~
 
-find out how to rearrange area below footer
+~~find out how to rearrange area below footer~~ - edit untitled/lang/en/strings.cfg

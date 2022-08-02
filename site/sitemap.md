@@ -17,6 +17,5 @@ site map of duncanidaho.org
 * /template-license.md: [Template license](/template-license.md)
 * /style-test.md: [Styling Test](/style-test.md)
 * /tasks/: [tasks](/tasks/)
-* /tasks/202105xx.md: [Bunny 202105xx changelog](/tasks/202105xx.md)
 </div>
 
