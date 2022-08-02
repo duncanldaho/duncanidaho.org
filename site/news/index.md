@@ -1,9 +1,9 @@
 ---
-title: Bunny news
+title: blog/news/updates
 x-toc-enable: true
 ...
 
-The bunnies have been busy!
+Lorem ipsum...
 
 -------------------------------------------------------------------------------
 
