@@ -1,0 +1,19 @@
+# Ignore everything
+*
+
+# Except...
+!*.cfg
+!*.md
+!*.html
+!*.css
+!*.txt
+!*.ico
+!feed.xml
+
+!*AUTHORS
+!*COPYING
+!*LICENSE
+!*MANIFEST
+
+# ...even if they are in subdirectories
+!*/
