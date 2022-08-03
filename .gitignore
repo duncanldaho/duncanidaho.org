@@ -8,6 +8,9 @@
 !*.css
 !*.txt
 !*.ico
+!*.png
+!*.jpg
+!*.thumb
 !feed.xml
 
 !*AUTHORS
