@@ -7,4 +7,4 @@ I wanted to learn more about web hosting so I use this domain to workshop stuff.
 
 I'd like to get a place to show style transfers, but I still working out the best way to implement it.
 
-This space is intended mostly for my own benefit, but feel free to look around.
+This site is just a place for me to workshop ideas and store resources for later, but feel free to look around.
