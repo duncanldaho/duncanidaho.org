@@ -27,7 +27,9 @@ img,video{max-width:100%}
 }
 html,ul,#TOC{padding:1em}
 
-.center{text-align: center}
+.nav_header{text-align: center}
+.nst_gallery{text-align: center}
+.footer{text-align: center}
 
 /* 1337box_shadow.css */
 .f,.f *{position:fixed;max-width:100%;max-height:100%;top:50%;left:50%}
