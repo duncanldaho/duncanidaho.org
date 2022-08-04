@@ -1,5 +1,5 @@
 html{
-	background:#251d1d;
+	background-color:#281b1b;
 	color:#eee;
 }
 .date,.author,.h a{display:none}
@@ -26,6 +26,13 @@ img,video{max-width:100%}
 	margin:1em
 }
 html,ul,#TOC{padding:1em}
+
+div.page {
+        box-shadow: 0 0 2px;
+        background-color:#251d1d;
+        margin:0 auto;
+        padding: 0.1em 1em;
+}
 
 .nav-header{text-align: center}
 .nst-gallery{text-align: center}
