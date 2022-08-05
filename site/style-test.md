@@ -5,7 +5,10 @@ title: Styling Test
 Lorem ipsum
 ==================
 
-The purpose of this page is to aid development - below you'll find basically every format that is possible with Markdown. If you develop a theme or want to test css, you should make sure that all examples below show decent.
+The purpose of this page is to aid development - below you'll find basically
+every format that is possible with Markdown. If you develop a theme or want to
+test css, you should make sure that all examples below show decent. This is a
+modified version of the pico theme styling page.[^1]
 
 Text
 ----
@@ -140,11 +143,14 @@ Lorem ipsum dolor sit amet.
 
 Table
 -----
+Text above the table, a title or explanation:
 
 | Item         | Price     | # In stock |
 |--------------|-----------|------------|
 | Juicy Apples | 1.99      | *7*        |
 | Bananas      | **1.89**  | 5234       |
+
+Text below the table...
 
 Forms
 -----
@@ -181,7 +187,10 @@ Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie co
 
 Annotations
 ----
-Annotations are arranged under the footer.[^1] Versions of the Lorem ipsum text have been used in typesetting at least since the 1960s, when it was popularized by advertisements for Letraset transfer sheets.[^2]
+Annotations are arranged under the footer. They appear below the footer and
+links are supported. "Versions of the Lorem ipsum text have been used in
+typesetting at least since the 1960s, when it was popularized by advertisements
+for Letraset transfer sheets."[^2]
 
-[^1]: Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+[^1]: ["Theme Styling Test"](https://github.com/picocms/Pico/blob/09aa82578710d82dd7dc482febe32991be0ea307/content-sample/theme.md) picocms.org. Retrieved 2022-07-21.
 [^2]: ["Lorem ipsum"](https://en.wikipedia.org/wiki/Lorem_ipsum) wikipedia.org. Retrieved 2022-07-21.
