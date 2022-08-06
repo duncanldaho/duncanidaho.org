@@ -24,12 +24,12 @@
 </header>
 <p><a href="./">Return to index</a></p>
 <div class="h"><h1 id="unstop">unstop</h1><a aria-hidden="true" href="#unstop">[link]</a></div>
-<p>I wrote a python script to perform neural style transfer. The project was a good learning experience, I knew almost nothing about python, neural networks or tensors. The code here is static and for demonstration purposes only, up to date source code is available <a href="https://github.com/duncanldaho/unstop">here</a>.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>I wrote a python script to perform neural style transfer. The project was a good learning experience, going in I knew almost nothing about python, neural networks or tensors. The code here is static and for demonstration purposes only, up to date source code is available <a href="https://github.com/duncanldaho/unstop">here</a>.</p>
 <p>First the python modules need to be imported.</p>
 <pre><code>import os
 import tensorflow as tf
 import tensorflow_hub as hub</code></pre>
-<p>Then several functions are defined. This first function validates the user input to make sure a real file is chosen. I’m not sure if it is “best practice” to use an <code>elif</code> statement that loops back into the original function, but it works.</p>
+<p>Then several functions are defined. This first function validates the user input to make sure a real file is chosen. In the future, I will also set it up to check the file extension. I’m not sure if it is best practice to use an <code>elif</code> statement that loops back into the original function, but so far it works.</p>
 <pre><code>def extension_check(user_input):
     if os.path.isfile(user_input):
         return user_input
@@ -43,24 +43,19 @@ import tensorflow_hub as hub</code></pre>
         image, (256, 256), preserve_aspect_ratio=True, antialias=True
     )
     return image</code></pre>
-<p>This next function decodes the JPEG data. A quick note on fixed and floating point numbers. JPEGs use an 8 bit unsigned integer: 256 values can be represented in base-2 with 8 bits, unsigned means those values can only be positive, and integers are of course whole numbers.</p>
-<p><strong>Fixed point</strong> numbers are very <em>accurate</em>. They have a specific number of bits reserved for the integer <strong>and</strong> a specific number of bits reserved for the fraction. This comes at the cost of range, meaning you can represent fewer values with the same given number of bits.</p>
-<p><strong>Floating point</strong> numbers are fundamentally different from fixed point, in that the decimal point “floats”. It can be placed anywhere relative to the significant digits of the number. This means values are approximated, less accurate but more precise. Floating point numbers are represented approximately, and a larger range can be represented with the same given number of bits.</p>
-<p>The JPEG <code>uint8</code> data is cast to <code>float32</code>. The RGB values can be [0,255], so they are normalized by dividing by 255. Neurons can only process values between [0,1].</p>
-<p>These steps so far deliver a three dimensional array. An “empty” batch dimension is added since the model expects this data shape.</p>
+<p>This next function decodes the JPEG data. The JPEG <code>uint8</code> data is cast to <code>float32</code>. Neurons can only process values between [0,1]. The maximum RGB value is 255, so they can be normalized by dividing by 255. These steps so far deliver a three dimensional array. An “empty” batch dimension is added since the model expects this data shape.</p>
 <pre><code>def preprocess(image):
     image = tf.io.decode_jpeg(image, channels=3)
     image = tf.cast(image, tf.float32) / 255.0
     image = tf.expand_dims(image, axis=0)
     return image</code></pre>
-<p>The last function performs the opposite of the previous function. It removes the batch dimension, coverts from [0,1] back to [0,255] RGB, casts the data from <code>float32</code> to <code>uint8</code>, and then encodes the data back into a JPEG file.</p>
+<p>The last function performs the opposite of the previous function. It removes the batch dimension, coverts from [0,1] back to [0,255] RGB, casts the data from <code>float32</code> to <code>uint8</code>, and then encodes the data back into a JPEG.</p>
 <pre><code>def postprocess(image):
-    &quot;&quot;&quot;Remove batch dim., convert to RGB, cast to uint8, encode JPEG data.&quot;&quot;&quot;
     image = tf.squeeze(image, axis=None) * 255.0
     image = tf.cast(image, tf.uint8)
     image = tf.io.encode_jpeg(image, quality=95)
     return image</code></pre>
-<p>Last of all is the actual code. It asks the user to specify the path to the images, utilizing the first function to make sure a real file is chosen. It loads the data, performs the functions in the appropriate order, and then finally runs the two sets of data (each image) through the tensorflow model.</p>
+<p>Last of all is the actual code. It asks the user to specify the path to the images, utilizing the first function to make sure a real file is chosen. It loads the data, performs the functions in the appropriate order, and then finally runs the values (each image, decoded and transformed into tensors) through the tensorflow model.</p>
 <pre><code>content_path = extension_check(input(&quot;Content image path: &quot;))
 style_path = extension_check(input(&quot;Style image path: &quot;))
 stylized_path = input(&quot;Write path: &quot;)
@@ -74,7 +69,7 @@ hub_module = hub.load(
 
 outputs = hub_module(preprocess(content), resize(preprocess(style)))
 tf.io.write_file(stylized_path, postprocess(outputs))</code></pre>
-<p>The tensorflow model is a bit of a mystery to me. It passes the data through the neural network and does some complicated maths to “extract” styles from one image and add them to another.</p>
+<p>The tensorflow model is a bit of a mystery to me. It passes the data through the neural network and does some complicated maths to “extract” styles from one image and apply it to another. I want to stress this is the first python project I have worked on, I’m sure there are better or more optimized ways of performing similar style transfer.</p>
 <p>A few things to look into:</p>
 <ul>
 <li>Casting to different data type and/or encoding into different file types</li>
@@ -97,12 +92,6 @@ Powered by <a href="https://untitled.vimuser.org/">untitled</a>
 </div>
 </div>
 </div>
-<section class="footnotes" role="doc-endnotes">
-<hr />
-<ol>
-<li id="fn1" role="doc-endnote"><p>Source code is available under the <a href="/licenses/license.html">GPLv3 License</a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section>
 </div>
 </body>
 </html>
