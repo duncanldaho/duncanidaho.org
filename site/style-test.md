@@ -1,5 +1,6 @@
 ---
 title: Styling Test
+x-toc-enable: true
 ...
 
 Lorem ipsum

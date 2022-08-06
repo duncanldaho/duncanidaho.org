@@ -4,6 +4,10 @@ html{
 }
 .date,.author,.h a{display:none}
 code,pre,#TOC,a:hover{background:#444}
+pre {
+	overflow-y: auto;
+	padding: 1em 1em 1em 1em;
+}
 :not(p),a:hover {
 	max-width:50em;
 	margin:0 auto;
