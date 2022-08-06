@@ -1,13 +1,13 @@
 ---
-title: Copyleft & License
+title: Copyright & License
 x-toc-enable: false
 ...
 
 Unless otherwise stated, all documents/pages/images on this website/repository
-are released under the terms of the GNU General Purpose License. Feel free to
+are released under the terms of the GNU General Purpose License v3. Feel free to
 modify, share, redistribute, or otherwise *use* this website as you see fit.
 
-This website respects your freedoms. No cookies or javascript are utilized
+This website respects your freedom. No cookies or javascript are utilized
 *except* those utilized by Cloudflare for spam/DDOS protection.
 
 ----

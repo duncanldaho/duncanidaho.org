@@ -12,7 +12,7 @@ site map of duncanidaho.org
 * /gallery.md: [gallery](/gallery.md)
 * /tasks.md: [tasks](/tasks.md)
 * /: [duncan idaho](/)
-* /licenses/: [Copyleft & License](/licenses/)
+* /licenses/: [Copyright & License](/licenses/)
 * /licenses/license.md: [GPLv3 License](/licenses/license.md)
 * /licenses/template-license.md: [Template license](/licenses/template-license.md)
 * /nst.md: [unstop](/nst.md)
