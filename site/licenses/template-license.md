@@ -3,20 +3,17 @@ title: Template license
 ...
 
 This website is written in Markdown, and compiled into static HTML using
-Pandoc. An HTML template is used, 
+Pandoc. An HTML template is used,
 Copyright (c) 2014--2017, John MacFarlane
 
 Modifications to it are copyright 2021 Leah Rowe, released under the terms of
 Creative Commons Zero license version 1.0 universal, which you can find here:
 <https://creativecommons.org/publicdomain/zero/1.0/legalcode>
 
-The bunnies were not involved. Fun fact: Leah does not even own a bunny,
-whether a real one or a toy of one.
-
-You can find the template file here: [/template.include](/template.include) 
+You can find the template file here: [template.include](/licenses/template.include)
 
 The file `template.include` is the modified version (modified by Leah Rowe).
-The original version can be found here: [/template.original](/template.original)
+The original version can be found here: [template.original](/licenses/template.original)
 
 Other modified templates may be used, on specific pages. Check for this on the
 Git repository for the Libreboot website.

@@ -1,5 +1,5 @@
 ---
-title: Styling Test
+title: styling test
 x-toc-enable: true
 ...
 

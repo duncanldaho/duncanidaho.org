@@ -10,7 +10,7 @@ I wrote a python script to perform neural style transfer.
 The project was a good learning experience, I knew almost nothing about
 python, neural networks or tensors. The code here is static and for
 demonstration purposes only, up to date source code is available
-[here](https://github.com/duncanldaho/unstop).
+[here](https://github.com/duncanldaho/unstop).[^1]
 
 
 First the python modules need to be imported.
@@ -130,3 +130,5 @@ networks. I think it would be extremely worthwhile to make a network for audio
 neural style transfer. All audio projects that I have come across use lossy
 means of passing the audio data to the neural network. After I get around to
 audio style transfer, A/V might be the next big project to work on.
+
+[^1]: Source code is available under the [GPLv3 License](/licenses/license.html).
