@@ -1,7 +1,14 @@
-html{
-	background-color:#281b1b;
-	color:#eee;
+/* light & dark mode */
+@media  (prefers-color-scheme: light) {
+	html { background-color:  grey; color: white; }
+	div.page { background-color: #333; }
 }
+@media  (prefers-color-scheme: dark) {
+	html { background-color:  #281b1b; color: #eee; }
+	div.page { background-color: #251d1d; }
+}
+
+/* original .css values */
 .date,.author,.h a{display:none}
 code,pre,#TOC,a:hover{background:#444}
 pre {
@@ -30,14 +37,13 @@ img,video{max-width:100%}
 	margin:1em
 }
 html,ul,#TOC{padding:1em}
-
 div.page {
         box-shadow: 0 0 2px;
-        background-color:#251d1d;
         margin:0 auto;
         padding: 0.1em 1em;
 }
 
+/* center objects */
 .nav-header{text-align: center}
 .nst-gallery{text-align: center}
 .footer{text-align: center}
