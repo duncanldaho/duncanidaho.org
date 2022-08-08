@@ -1,56 +1,103 @@
 /* light & dark mode */
 @media  (prefers-color-scheme: light) {
-	html { background-color:  grey; color: white; }
-	div.page { background-color: #333; }
+	html {
+        background-color: grey;
+        color: white;
+    }
+	div.page {
+        background-color: #333;
+    }
 }
 @media  (prefers-color-scheme: dark) {
-	html { background-color:  #281b1b; color: #eee; }
-	div.page { background-color: #251d1d; }
+	html {
+        background-color: #281b1b;
+        color: #eee;
+    }
+	div.page {
+        background-color: #251d1d;
+    }
 }
-
 /* original .css values */
-.date,.author,.h a{display:none}
-code,pre,#TOC,a:hover{background:#444}
+.date, .author, .h a {
+    display: none;
+}
+code, pre, #TOC, a:hover {
+    background: #444;
+}
 pre {
 	overflow-y: auto;
 	padding: 1em 1em 1em 1em;
 }
-:not(p),a:hover {
-	max-width:50em;
-	margin:0 auto;
-	font-family:sans-serif;
-	line-height:1.4
+:not(p), a:hover {
+	max-width: 50em;
+	margin: 0 auto;
+	font-family: sans-serif;
+	line-height: 1.4;
 }
-a{color:#fcc}
-.title>*, header ul>li, .nav ul>li,
-#footer ul>li, .h:hover>*
-ul>li
-{
-	display:inline;
-	margin:.7%;
-	text-align:center;
+a {
+    color: #fcc;
 }
-.title>*,span.date{display:block}
-img,video{max-width:100%}
-#TOC{
-	float:left;
-	margin:1em
+.title>*, header ul>li, .nav ul>li, #footer ul>li, .h:hover>* ul>li {
+	display: inline;
+	margin: .7%;
+	text-align: center;
 }
-html,ul,#TOC{padding:1em}
+.title>*, span.date {
+    display: block;
+}
+img, video {
+    max-width: 100%;
+}
+#TOC {
+	float: left;
+	margin: 1em;
+}
+html,ul,#TOC {
+    padding: 1em;
+}
 div.page {
         box-shadow: 0 0 2px;
         margin:0 auto;
         padding: 0.1em 1em;
 }
-
-/* center objects */
-.nav-header{text-align: center}
-.nst-gallery{text-align: center}
-.footer{text-align: center}
-
+/* center these objects */
+.nav-header {
+    text-align: center;
+}
+.nst-gallery {
+    text-align: center;
+}
+.footer {
+    text-align: center;
+}
 /* 1337box_shadow.css */
-.f,.f *{position:fixed;max-width:100%;max-height:100%;top:50%;left:50%}
-.f *{transform:translate(-50%,-50%)}
-.f{display:none;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.8)}
-*:focus+.f{display:block}
-img{cursor:pointer}
+.f, .f * {
+    position: fixed;
+    max-width: 100%;
+    max-height: 100%;
+    top: 50%;
+    left: 50%;
+}
+.f * {
+    transform:translate(-50%, -50%);
+}
+.f {
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
+*:focus+.f {
+    display: block;
+}
+img {
+    cursor: pointer;
+}
+.square-crop {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+}
