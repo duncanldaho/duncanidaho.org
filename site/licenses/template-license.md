@@ -1,5 +1,5 @@
 ---
-title: Template license
+title: untitled license
 ...
 
 This website is written in Markdown, and compiled into static HTML using
