@@ -15,7 +15,7 @@ site map of duncanidaho.org
 * /licenses/: [Copyright & License](/licenses/)
 * /licenses/license.md: [GPLv3 License](/licenses/license.md)
 * /licenses/template-license.md: [Template license](/licenses/template-license.md)
-* /nst.md: [unstop](/nst.md)
 * /style-test.md: [styling test](/style-test.md)
+* /unstop.md: [unstop](/unstop.md)
 </div>
 
